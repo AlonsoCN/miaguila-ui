@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "miaguila-ui"
+    }
+  },
+  "defaultProject": "miaguila-ui",
+  "cli": {
+    "analytics": "2c42f6d8-67c0-4bcf-8ece-1ee5294dfcd5"
+  }
 }
