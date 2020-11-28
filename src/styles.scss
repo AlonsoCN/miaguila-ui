@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/constants";
+@import "./styles/base";
+
+body {
+  color: $color-red;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
