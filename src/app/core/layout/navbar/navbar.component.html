@@ -1,1 +1,19 @@
-<h1>Navbar</h1>
+<div>
+  <div class="name-logo-section">Mi Aguila</div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" (click)="navigateToHome()">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="navigateToUsers()">Usuarios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tareas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+        >Disabled</a
+      >
+    </li>
+  </ul>
+</div>

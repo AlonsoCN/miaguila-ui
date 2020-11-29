@@ -1,14 +1,16 @@
-<header>
-  <app-header></app-header>
-</header>
-
-<div class="container">
-  <div class="col-nav">
-    <app-navbar></app-navbar>
-  </div>
-  <div class="col-container">
-    <div class="row">
-      <router-outlet></router-outlet>
+<div class="container-flex">
+  <div class="row layout">
+    <aside class="col-nav col-12 col-md-2" style="background-color: red">
+      <app-navbar></app-navbar>
+    </aside>
+    <div
+      class="col-container col-12 col-md-10"
+      style="background-color: yellow"
+    >
+      <app-header></app-header>
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
