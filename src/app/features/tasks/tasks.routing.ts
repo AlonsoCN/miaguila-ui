@@ -1,15 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { UsersComponent } from './users.component';
-import { UsersListComponent } from './views/users-list.view';
+import { TasksComponent } from './tasks.component';
+import { TasksListComponent } from './views/tasks-list.view';
 
 const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full' },
   {
     path: '',
-    component: UsersComponent,
-    children: [{ path: 'list', component: UsersListComponent }],
+    component: TasksComponent,
+    children: [{ path: 'list', component: TasksListComponent }],
   },
 ];
 
@@ -17,4 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class UsersRoutingModule {}
+export class TasksRoutingModule {}

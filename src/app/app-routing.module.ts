@@ -18,6 +18,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./features/users/users.module').then((m) => m.UsersModule),
       },
+      {
+        path: 'tasks',
+        loadChildren: () =>
+          import('./features/tasks/tasks.module').then((m) => m.TasksModule),
+      },
     ],
   },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
