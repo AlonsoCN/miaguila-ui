@@ -1,14 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItems } from '@core/constants/menu-items';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
+  title: string = MenuItems.HOME;
+
   constructor() {}
 
-  ngOnInit(): void {
-    console.log('Main Component init');
+  changeTitle(title: string): void {
+    console.log(
+      '🚀 ~ file: main.component.ts ~ line 15 ~ MainComponent ~ changeTitle ~ title',
+      title
+    );
+    this.title = title;
   }
 }

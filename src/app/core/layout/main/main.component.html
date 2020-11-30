@@ -1,14 +1,13 @@
 <div class="container-flex">
   <div class="row layout">
-    <aside class="col-nav col-12 col-md-2" style="background-color: red">
-      <app-navbar></app-navbar>
+    <aside class="col-nav col-12 col-md-2">
+      <app-navbar (navigate)="changeTitle($event)"></app-navbar>
     </aside>
-    <div
-      class="col-container col-12 col-md-10"
-      style="background-color: yellow"
-    >
-      <app-header></app-header>
-      <div class="row">
+    <div class="col-container col-12 col-md-10">
+      <div class="row-flex">
+        <app-header [title]="title"></app-header>
+      </div>
+      <div class="row ml-2 mr-4 mt-4" style="background-color: red">
         <router-outlet></router-outlet>
       </div>
     </div>

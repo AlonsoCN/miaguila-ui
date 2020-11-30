@@ -2,9 +2,5 @@
 @import "./styles/constants";
 @import "./styles/base";
 
-body {
-  color: $color-red;
-}
-
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
