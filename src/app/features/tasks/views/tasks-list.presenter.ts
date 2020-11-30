@@ -21,9 +21,7 @@ export class TasksListPresenter {
     this.tasksService
       .delete(taskToBeDeleted)
       .then((indexTaskDeleted: number) => {
-        if (indexTaskDeleted) {
-          this.tasks.splice(indexTaskDeleted, 1);
-        }
+        this.tasks.splice(indexTaskDeleted, 1);
       });
   }
 
