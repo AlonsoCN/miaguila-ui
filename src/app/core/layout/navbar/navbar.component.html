@@ -6,15 +6,17 @@
   <ul class="nav flex-column">
     <li class="nav-item mt-2 mb-2">
       <img class="ml-4" src="../../../../assets/img/home.svg" alt="home" />
-      <a class="nav-link active" (click)="navigateToHome()">Inicio</a>
+      <a class="nav-link active" (click)="navigateToHome()">{{
+        menuItems.HOME
+      }}</a>
     </li>
     <li class="nav-item mt-2 mb-2">
       <img class="ml-4" src="../../../../assets/img/people.svg" alt="users" />
-      <a class="nav-link" (click)="navigateToUsers()">Usuarios</a>
+      <a class="nav-link" (click)="navigateToUsers()">{{ menuItems.USERS }}</a>
     </li>
     <li class="nav-item mt-2 mb-2">
       <img class="ml-4" src="../../../../assets/img/task.svg" alt="tasks" />
-      <a class="nav-link" href="#">Tareas</a>
+      <a class="nav-link" href="#">{{ menuItems.TASKS }}</a>
     </li>
   </ul>
 </div>

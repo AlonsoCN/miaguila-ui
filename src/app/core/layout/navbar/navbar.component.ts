@@ -8,6 +8,7 @@ import { MenuItems } from '@core/constants/menu-items';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  menuItems = MenuItems;
   @Output() navigate = new EventEmitter();
 
   constructor(private router: Router) {}
