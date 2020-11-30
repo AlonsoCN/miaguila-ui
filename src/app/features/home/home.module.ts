@@ -10,8 +10,4 @@ import { WelcomeComponent } from './views/welcome.view';
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeModule {
-  constructor() {
-    console.log('Home Module');
-  }
-}
+export class HomeModule {}

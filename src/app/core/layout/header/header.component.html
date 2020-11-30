@@ -4,6 +4,9 @@
   <div class="col-2">
     <div class="row">
       <img src="../../../../assets/img/bell.svg" alt="bell" />
+      <span class="badge badge-primary undone-tasks">{{
+        pendingTasks | async
+      }}</span>
       <img
         class="ml-3 mr-3"
         src="../../../../assets/img/divider.svg"

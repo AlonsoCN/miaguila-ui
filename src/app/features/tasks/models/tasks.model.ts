@@ -1,30 +1,20 @@
-export interface IUser {
-  id: number;
-  firstname: string;
-  lastname: string;
-  email: string;
-  phone: string;
-  status: boolean;
+export interface ITask {
+  id?: string;
+  description: string;
 }
 
-export class User {
-  id: number;
-  firstname: string;
-  lastname: string;
-  email: string;
-  phone: string;
-  status: boolean;
+export class Task {
+  id: string;
+  description: string;
+  isDone: boolean;
 
-  constructor(data: IUser) {
-    this.id = data.id;
-    this.firstname = data.firstname;
-    this.lastname = data.lastname;
-    this.email = data.email;
-    this.phone = data.phone;
-    this.status = data.status;
+  constructor(data: ITask) {
+    this.id = Math.random().toString(36).substr(2, 9);
+    this.description = data.description;
+    this.isDone = false;
   }
 
-  get fullName(): string {
-    return `${this.firstname} ${this.lastname}`;
+  toggle(): void {
+    this.isDone = !this.isDone;
   }
 }
