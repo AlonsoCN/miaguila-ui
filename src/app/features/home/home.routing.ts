@@ -17,8 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomeRoutingModule {
-  constructor() {
-    console.log('HomeRoutingModule');
-  }
-}
+export class HomeRoutingModule {}

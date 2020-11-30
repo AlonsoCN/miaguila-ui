@@ -16,14 +16,12 @@
         <input
           class="form-check-input task-checkbox"
           type="checkbox"
-          id="{{`task${i}`}"
           [checked]="task.isDone"
           (click)="presenter.toggleTask(task)"
         />
         <label
           [ngClass]="{completed: task.isDone}"
           class="form-check-label task-label"
-          for="{{`task${i}`}"
         >
           {{task.description}}
         </label>

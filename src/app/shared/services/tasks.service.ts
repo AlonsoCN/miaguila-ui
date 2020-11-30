@@ -51,10 +51,6 @@ export class TasksService {
 
   private notifyNumberUndoTasks(): void {
     const undoneTasks = this.tasks.filter((task) => !task.isDone);
-    console.log(
-      '🚀 ~ file: tasks.service.ts ~ line 53 ~ TasksService ~ notifyNumberUndoTasks ~ undoneTasks',
-      undoneTasks
-    );
     this.numberUndoTasks.next(undoneTasks.length);
   }
 }

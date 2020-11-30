@@ -12,10 +12,6 @@ export class MainComponent {
   constructor() {}
 
   changeTitle(title: string): void {
-    console.log(
-      '🚀 ~ file: main.component.ts ~ line 15 ~ MainComponent ~ changeTitle ~ title',
-      title
-    );
     this.title = title;
   }
 }
