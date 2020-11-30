@@ -5,7 +5,5 @@ import { Component } from '@angular/core';
   template: `<router-outlet></router-outlet>`,
 })
 export class UsersComponent {
-  constructor() {
-    console.log('userComponente init');
-  }
+  constructor() {}
 }

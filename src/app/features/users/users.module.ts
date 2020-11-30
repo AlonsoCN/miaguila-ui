@@ -3,15 +3,12 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './users.routing';
 import { UsersComponent } from './users.component';
 import { UsersListComponent } from './views/users-list.view';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [UsersComponent, UsersListComponent],
-  imports: [CommonModule, UserRoutingModule],
+  imports: [CommonModule, UserRoutingModule, HttpClientModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class UserModule {
-  constructor() {
-    console.log('User Module');
-  }
-}
+export class UsersModule {}
